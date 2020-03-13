@@ -81,3 +81,11 @@
         right: unset;
     }
 }
+
+@media(max-width: 530px) {
+    .card {
+        border-top: 2px solid #2B2A29;
+        left: unset;
+        right: 0;
+    }
+}
