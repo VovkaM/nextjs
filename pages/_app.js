@@ -2,6 +2,7 @@ import App, { Container } from 'next/app'
 import Head from 'next/head'
 import React from 'react'
 
+import Router from 'next/router'
 
 export default class MyApp extends App {
     
@@ -20,10 +21,17 @@ export default class MyApp extends App {
         return { pageProps }
     }
 
+
+
+
   componentDidMount = () => {
     this.setState({
       productArr: localStorage.getItem('inCard') === null ? [] : JSON.parse(localStorage.getItem('inCard'))
     })
+    const {pathname} = Router
+    if(pathname == '/' ){
+       Router.push('/products')
+    }
   }
 
 
