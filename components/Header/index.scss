@@ -1,0 +1,156 @@
+@import '../../variable.scss';
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 25px;
+    position: relative;
+    &-nav, &-userPanel {
+        max-width: 430px;
+        width: 100%;
+        //padding-bottom: 15px;
+        border-bottom: 2px solid #2B2A29;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        a {
+            color: $linkColor;
+            display: block;
+            font-size: $linkFont;
+            text-transform: uppercase;
+            padding: 0 10px 15px;
+            &.active {
+                color: $activeLinkColor;
+                border-bottom: 3px solid #2B2A29;
+                padding-bottom: 12px;
+            }
+            &:first-child {
+                margin-left: 10px;
+            }
+            &:last-child {
+                margin-right: 10px;
+            }
+        }
+    }
+    &-userPanel {
+        .button {
+            height: 35px;
+            border: none;
+            border-radius: 4px;
+            text-transform: uppercase;
+            font-size: $linkFont;
+            font-family: 'Reforma';
+            outline: none;
+            text-align: left;
+            margin-top: -5px;
+            cursor: pointer;
+        }
+        &-cardWrapp {
+            position: relative;
+            &-basket {
+                width: 110px;
+                background: #939598;
+                color: #fff;
+                padding: 0 15px;
+                margin: 0 5px;
+                &-img {
+                    width: 24px;
+                    margin: 0px 0px -4px 0;
+                    display: none;
+                }
+            }
+
+        }
+        &-login{
+            width: 60px;
+            padding-left: 5px;
+            color: $activeLinkColor;
+            background: #A8A9AD;
+            margin-right: 5px;
+            &-img {
+                width: 24px;
+                margin: 0px 5px -4px 0;
+                display: none;
+            }
+        }
+        &-toggleButton {
+            display: none;
+            border: none;
+            background: none;
+            height: 35px;
+            outline: none;
+            img {
+                width: 30px;
+            }
+        }
+    }
+}
+
+@media(max-width: 960px) {
+    .header {
+        padding-left: 0;
+        padding-right: 0;
+        &-nav {
+            display: none;
+        }
+        &-userPanel {
+            align-items: center;
+            max-width: 300px;
+            padding: 0 20px 15px;
+            width: 100%;
+            a {
+                display: none;
+            }
+            &-toggleButton {
+                display: block;
+            }
+        }
+    }
+}
+
+@media(max-width: 560px) {
+    .header {
+        &-userPanel {
+            &-cardWrapp {
+                &-basket {
+                    width: 50px;
+                    padding: 0;
+                    text-align: center !important;
+                    &-text {
+                        display: none;
+                    }
+                    &-img {
+                        display: inline;
+                        
+                    }
+                }
+            }
+            &-login{
+                width: 30px;
+                padding: 0;
+                text-align: center !important;
+                &-text {
+                    display: none;
+                }
+                &-img {
+                    display: inline;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 480px) {
+    .header {
+        &-logo {
+            img {
+                width: 160px;
+            }
+        }
+        &-userPanel {
+            padding-right: 0;
+            padding-left: 5px;
+        }
+    }
+}

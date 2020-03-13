@@ -1,0 +1,12 @@
+.banner {
+    padding: 0 25px;
+    img {
+        width: 100%;
+    }
+}
+
+@media(max-width: 960px) {
+    .banner {
+        padding: 0;
+    }
+}

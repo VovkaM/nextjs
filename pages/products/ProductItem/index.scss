@@ -1,0 +1,114 @@
+@import '../../../variable.scss';
+
+.productItem {
+    max-width: 313px;
+    width: 100%;
+    margin: 44px 0;
+    &-title {
+        margin-bottom: 24px;
+        a {
+            font-size: $productTitleFont;
+            text-transform: uppercase;
+            color: $productTitleColor;
+        }
+    }
+    &-imgWrapp {
+        height: 398px;
+        position: relative;
+        text-align: center;
+        &-fruit {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            img {
+                height: 80px;
+            }
+        }
+        &-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &-shadow {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            margin-left: -57px;
+        }
+        &-alcohol {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-size: $alcoholFont;
+            color: $alcoholColor;
+        }
+        &-bottle {
+            position: relative;
+            z-index: 5;
+            margin-top: 30px;
+        }
+    }
+    &-price {
+        margin: 20px 0 15px;
+        text-align: center;
+        color: $productTitleColor;
+        font-size: $priceFont;
+    }
+    &-button {
+        width: 100%;
+        height: 50px;
+        background: #434242;
+        text-transform: uppercase;
+        border-radius: 4px;
+        border: none;
+        color: #fff;
+        outline: none;
+        font-family: 'Reforma';
+        font-size: 29px;
+        cursor: pointer;
+        &:hover {
+            background-color: #535353;
+        }
+    }
+}
+
+@media(max-width: 960px) {
+    .groupProductItem {
+        &-imgWrapp {
+            height: auto;
+        }
+    }
+}
+
+@media(max-width: 340px) {
+    .productItem {
+        &-imgWrapp {
+            &-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 320px) {
+    .productItem {
+        &-imgWrapp {
+            &-shadow {
+                position: absolute;
+                bottom: 40px;
+                left: 50%;
+                margin-left: -57px;
+            }
+            &-bottle {
+                position: relative;
+                z-index: 5;
+                margin-top: 5px;
+            }
+        }
+    }
+}

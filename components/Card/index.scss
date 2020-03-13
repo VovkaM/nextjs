@@ -1,0 +1,83 @@
+.card {
+    position: absolute;
+    width: 250px;
+    top: 40px;
+    border: 2px solid #2B2A29;
+    border-top: 2px solid #EBECEC;
+    border-radius: 0 0 4px 4px;
+    background: #EBECEC;
+    padding: 5px 10px 10px;
+    right: 65px;
+    &-product {
+        margin-top: 5px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #C5C6C6;
+        &-title {
+            text-align: center;
+            margin: 0 0 5px;
+            font-size: 32px;
+            text-transform: uppercase;
+        }
+        &-countDel {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            &-counter {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &-button {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 4px;
+                    color: #fff;
+                    background: #434242;
+                    text-align: center;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 24px;
+                    outline: none;
+                }
+                span {
+                    display: block;
+                    margin: 0 5px;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 4px;
+                    background: #fff;
+                    color: #434242;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 24px;
+                }
+            }
+            &-delete {
+                height: 30px;
+                border-radius: 4px;
+                color: #fff;
+                background: #434242;
+                text-align: center;
+                border: none;
+                cursor: pointer;
+                font-family: 'Reforma';
+                text-transform: uppercase;
+                outline: none;
+                font-size: 24px;
+                padding: 0 10px;
+            }
+        }
+    }
+    &-empty {
+        text-align: center;
+        font-size: 24px;
+    }
+}
+
+@media(max-width: 960px) {
+    .card {
+        top: 48px;
+        left: 0;
+        right: unset;
+    }
+}
