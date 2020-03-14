@@ -52,6 +52,13 @@ export default class MyApp extends App {
       productArr
     })
     localStorage.setItem('inCard', JSON.stringify(productArr))
+
+    let card = document.getElementsByClassName('header-userPanel-cardWrapp-basket')[0]
+    card.classList.add('added')
+    setTimeout(() => {
+      card.classList.remove('added')
+    },2000)
+
   }
 
   removeFromCard = (k) => {

@@ -5,15 +5,6 @@ import './index.scss'
 
 export default class GroupProduct extends React.Component {
 
-    addClick = (id) => {
-        this.props.addToCard(id)
-        let btn = document.getElementsByClassName('productItem-button-'+id)[0]
-        btn.classList.add('added')
-        setTimeout(() => {
-            btn.classList.remove('added')
-        },2000)
-    }
-
     
     render() {
 
@@ -26,7 +17,7 @@ export default class GroupProduct extends React.Component {
                 <div className="groupProductItem-imgWrapp-fruit" ><img src={item.fruitImg} alt={item.title}/></div>
             </div>
             <div className="groupProductItem-price">{item.volume}/{item.price} грн.</div>
-            <button className={"productItem-button productItem-button-"+item.id} onClick={() => this.addClick(item.id)}>
+            <button className="productItem-button" onClick={() => this.props.addToCard(item.id)}>
                 {!found ? 'додати в кошик' : 'додано ('+found.count+')'}
             </button>
         </div>

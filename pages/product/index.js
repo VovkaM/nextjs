@@ -1,13 +1,10 @@
 import React from 'react';
-import { useRouter } from 'next/router'
 import Layout from '../../components/Layout'
-import Header from '../../components/Header'
 
 import {products} from '../../consts/products'
 
 import './index.scss'
 
-//const router = useRouter()
 
 export default class Product extends React.Component {
 
@@ -30,14 +27,6 @@ export default class Product extends React.Component {
         })
     }
 
-    addClick = (id) => {
-        this.props.addToCard(id)
-        let btn = document.getElementsByClassName('productItem-button-'+id)[0]
-        btn.classList.add('added')
-        setTimeout(() => {
-            btn.classList.remove('added')
-        },2000)
-    }
 
 
     render() {
@@ -65,7 +54,7 @@ export default class Product extends React.Component {
                         <p className="productPage-content-description-price">
                             Ціна: {product.price} грн. за {product.volume} мл.
                         </p>
-                        <button className={"productPage-content-description-button productItem-button-"+product.id} onClick={() => this.addClick(product.id)}>
+                        <button className="productPage-content-description-button" onClick={() => this.props.addToCard(product.id)}>
                         {!found ? 'додати в кошик' : 'додано ('+found.count+')'}
                         </button>
                     </div>

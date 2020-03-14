@@ -34,7 +34,7 @@ export default class Header extends React.Component {
         this.setState({
             showCard: !this.state.showCard
         })
-    }
+    } 
 
     showMobileMenu = () => {
         this.setState({
@@ -62,6 +62,7 @@ export default class Header extends React.Component {
             products.push(item[0])
             totalCount += selectedProducts[i].count
         }
+        console.log(products)
         return <header className="header">
             <nav className="header-nav">
                 {links.map((item,k) => {

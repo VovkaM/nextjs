@@ -7,9 +7,9 @@
     padding: 40px 25px;
     transition: padding 0.2s ease-in-out;
     position: relative;
-    background-color: #E6E8EA;
+    background-color: #EBEBEB;
     position: fixed;
-    width: 100%;
+    width: 100%; 
     z-index: 6;
     max-width: 1256px;
     top: 0;
@@ -70,6 +70,10 @@
                 color: #fff;
                 padding: 0 15px;
                 margin: 0 5px;
+                transition: background 0.5s ease-in-out;
+                &.added {
+                    background: #dc0f0f;
+                }
                 &-img {
                     width: 24px;
                     margin: 0px 0px -4px 0;
