@@ -5,7 +5,16 @@
     align-items: center;
     justify-content: space-between;
     padding: 40px 25px;
+    transition: padding 0.2s ease-in-out;
     position: relative;
+    background-color: #E6E8EA;
+    position: fixed;
+    width: 100%;
+    z-index: 6;
+    max-width: 1256px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0px);
     &-nav, &-userPanel {
         max-width: 430px;
         width: 100%;
@@ -20,6 +29,7 @@
             font-size: $linkFont;
             text-transform: uppercase;
             padding: 0 10px 15px;
+            transition: padding 0.2s ease-in-out;
             &.active {
                 color: $activeLinkColor;
                 border-bottom: 3px solid #2B2A29;
@@ -31,6 +41,12 @@
             &:last-child {
                 margin-right: 10px;
             }
+        }
+    }
+    &-logo {
+        img {
+           height: 110px;
+           transition: height 0.2s ease-in-out;
         }
     }
     &-userPanel {
@@ -86,11 +102,30 @@
         }
     }
 }
+.header.fixed {
+    -webkit-box-shadow: 0px 3px 12px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 12px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 12px -1px rgba(0,0,0,0.75);
+    padding: 11px 25px;
+    .header-logo {
+        img {
+            height: 40px;
+        }
+    }
+    .header-nav, .header-userPanel {
+        a {
+            padding-bottom: 10px;
+            &.active {
+                padding-bottom: 7px;
+            }
+        }
+    }
+}
 
 @media(max-width: 960px) {
     .header {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 10px;
+        padding-right: 10px;
         &-nav {
             display: none;
         }
@@ -106,6 +141,10 @@
                 display: block;
             }
         }
+    }
+    .header.fixed {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -146,6 +185,7 @@
         &-logo {
             img {
                 width: 160px;
+                height: auto !important;
             }
         }
         &-userPanel {

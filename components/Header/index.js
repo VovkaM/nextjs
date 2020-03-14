@@ -25,7 +25,8 @@ export default class Header extends React.Component {
         super(props);
         this.state = {
             showCard: false,
-            showMobMenu: false
+            showMobMenu: false,
+            scrollTop: 0
           }
     }
 
@@ -39,6 +40,17 @@ export default class Header extends React.Component {
         this.setState({
             showMobMenu: !this.state.showMobMenu
         })
+    }
+
+    componentDidMount = () => {
+        window.addEventListener('scroll', (event) => {
+            const scrollY = window.scrollY
+            if (scrollY > 0) {
+                document.getElementsByTagName('header')[0].classList.add('fixed')
+            } else {
+                document.getElementsByTagName('header')[0].classList.remove('fixed')
+            }
+          })
     }
 
     render() {
@@ -74,17 +86,17 @@ export default class Header extends React.Component {
                                 removeFromCard={this.props.removeFromCard}
                                 handleCount={this.props.handleCount}
                             />
-                        }
+                        } 
                     <button className="header-userPanel-login button">
                         <span className="header-userPanel-login-text">вхід</span>
                         <img src="../../static/images/login.png" className="header-userPanel-login-img" alt="вхід"/>
                     </button>
                 </div>
                 <button className="header-userPanel-toggleButton" onClick={this.showMobileMenu}>
-                    {this.state.showMobMenu ? <img src="../../static/images/close.png"/> : <img src="../../static/images/menu.png"/>}
+                    <img src="../../static/images/menu.png"/>
                 </button>
            </div>
-           {this.state.showMobMenu && <MobileMenu />}
+           {this.state.showMobMenu && <MobileMenu showMobileMenu={this.showMobileMenu}/>}
         </header>
 
     }

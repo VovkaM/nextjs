@@ -9,16 +9,20 @@ const links = [
     {title: 'Заходи', link: '/meetings'},
     {title: 'Контакти', link: '/contacts'},
     {title: 'Доставка', link: '/contacts'},
-    {title: 'Оплата', link: '/contacts'},
+    {title: 'Оплата', link: '/contacts'}, 
 ]
 
 export default class MobileMenu extends React.Component {
 
+
     render() {
 
         return <div className="mobileMenu">
+            <div className="mobileMenu-close" onClick={this.props.showMobileMenu}>
+                <img src='../../../static/images/close.png' alt=""close/>
+            </div>
             {links.map((link,k) => {
-                return <ActiveLink activeClassName="active" href={link.link} key={k}><a>{link.title}</a></ActiveLink>
+                return <ActiveLink activeClassName="active"  onClick={this.props.showMobileMenu} href={link.link} key={k}><a>{link.title}</a></ActiveLink>
             })}
         </div>
 

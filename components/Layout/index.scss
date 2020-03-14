@@ -16,9 +16,9 @@ body {
 }
 
 .appLayout {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
 }
 
 .container {
@@ -26,9 +26,10 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
-    background: #EBECEC;
+    background: #E6E8EA;
     min-height: calc(100vh - 127px);
     padding-bottom: 150px;
+    padding-top: 192.7px;
 }
 
 a {

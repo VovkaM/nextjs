@@ -5,17 +5,31 @@
     width: 100%;
     margin: 44px 0;
     &-title {
-        margin-bottom: 24px;
+        display: inline-block;
+        margin-bottom: 23px;
+        border-bottom: 1px solid #E6E8EA;
+        transition: border 0.5s ease-in-out;
         a {
             font-size: $productTitleFont;
             text-transform: uppercase;
             color: $productTitleColor;
+        }
+        &:hover {
+            border-color: $productTitleColor;
         }
     }
     &-imgWrapp {
         height: 398px;
         position: relative;
         text-align: center;
+        &:hover {
+            .productItem-imgWrapp-shadow {
+                transform: scale(1.05);
+            }
+            .productItem-imgWrapp-bottle {
+                transform: scale(1.05);
+            }
+        }
         &-fruit {
             position: absolute;
             top: 0;
@@ -36,6 +50,7 @@
             bottom: 10px;
             left: 50%;
             margin-left: -57px;
+            transition: transform 0.5s ease-in-out;
         }
         &-alcohol {
             position: absolute;
@@ -48,6 +63,7 @@
             position: relative;
             z-index: 5;
             margin-top: 30px;
+            transition: transform 0.5s ease-in-out;
         }
     }
     &-price {
@@ -68,11 +84,16 @@
         font-family: 'Reforma';
         font-size: 29px;
         cursor: pointer;
+        transition: background 0.5s ease-in-out;
         &:hover {
-            background-color: #535353;
+            background: #535353;
+        }
+        &.added {
+            background: #dc0f0f;
         }
     }
 }
+
 
 @media(max-width: 960px) {
     .groupProductItem {
