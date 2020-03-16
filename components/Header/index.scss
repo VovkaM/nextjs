@@ -124,6 +124,13 @@
             }
         }
     }
+    .header-userPanel {
+        &-cardWrapp {
+            .card {
+                top: 35px
+            }
+        }
+    }
 }
 
 @media(max-width: 960px) {
