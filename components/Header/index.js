@@ -70,7 +70,7 @@ export default class Header extends React.Component {
                 })}
             </nav>
            <div className="header-logo">
-                <img src={logo} alt="Logo" />
+                <Link href="/"><a><img src={logo} alt="Logo" /></a></Link>
            </div>
            <div className="header-userPanel">
                 <Link href="/"><a>Доставка</a></Link>
