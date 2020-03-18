@@ -27,7 +27,7 @@ export default class Card extends React.Component {
                             <span>{this.props.selectedProducts[k].count}</span>
                             <button className="card-product-countDel-counter-button" onClick={() => this.props.handleCount(k,'+')}>+</button>
                         </div>
-                        <button className="card-product-countDel-delete" onClick={() => this.props.removeFromCard(k)}>видалити</button>
+                        <button className="card-product-countDel-delete" onClick={() => this.props.removeFromCard(k)}><span>видалити</span></button>
                     </div>
                 </div>
             }): <p className="card-empty">Кошик порожній</p>}
