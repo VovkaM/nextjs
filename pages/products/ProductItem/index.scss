@@ -7,7 +7,7 @@
     &-title {
         display: inline-block;
         margin-bottom: 23px;
-        border-bottom: 1px solid #E6E8EA;
+        border-bottom: 1px solid #EBEBEB;
         transition: border 0.5s ease-in-out;
         a {
             font-size: $productTitleFont;
@@ -24,7 +24,7 @@
         text-align: center;
         &:hover {
             .productItem-imgWrapp-shadow {
-                transform: scale(1.05);
+                transform: translate(0, 10px) scale(1.1);
             }
             .productItem-imgWrapp-bottle {
                 transform: scale(1.05);
