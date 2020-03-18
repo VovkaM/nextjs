@@ -66,8 +66,10 @@
                 outline: none;
                 font-size: 24px;
                 padding: 0 10px;
-                line-height: 30px;
-                display: block;
+                span {
+                    line-height: 30px;
+                    display: block;
+                }
             }
         }
     }
