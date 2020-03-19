@@ -25,7 +25,8 @@ export const products = [
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hendrerit gravida rutrum quisque non tellus orci ac auctor. Purus faucibus ornare suspendisse sed nisi lacus. Imperdiet massa tincidunt nunc pulvinar sapien et ligula. Massa id neque aliquam vestibulum morbi blandit. Sit amet nisl purus in mollis. Mi proin sed libero enim sed faucibus turpis in. Mi bibendum neque egestas congue quisque egestas diam in arcu. Tortor aliquam nulla facilisi cras.',
         alcohol: '40',
         volume: '480',
-        count: ''
+        count: '',
+        groupProduct: false
     },
     {
         id: 2,
@@ -37,7 +38,8 @@ export const products = [
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hendrerit gravida rutrum quisque non tellus orci ac auctor. Purus faucibus ornare suspendisse sed nisi lacus. Imperdiet massa tincidunt nunc pulvinar sapien et ligula. Massa id neque aliquam vestibulum morbi blandit. Sit amet nisl purus in mollis. Mi proin sed libero enim sed faucibus turpis in. Mi bibendum neque egestas congue quisque egestas diam in arcu. Tortor aliquam nulla facilisi cras.',
         alcohol: '40',
         volume: '400',
-        count: ''
+        count: '',
+        groupProduct: false
     },
     {
         id: 3,
@@ -49,7 +51,8 @@ export const products = [
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hendrerit gravida rutrum quisque non tellus orci ac auctor. Purus faucibus ornare suspendisse sed nisi lacus. Imperdiet massa tincidunt nunc pulvinar sapien et ligula. Massa id neque aliquam vestibulum morbi blandit. Sit amet nisl purus in mollis. Mi proin sed libero enim sed faucibus turpis in. Mi bibendum neque egestas congue quisque egestas diam in arcu. Tortor aliquam nulla facilisi cras.',
         alcohol: '11',
         volume: '220',
-        count: ''
+        count: '',
+        groupProduct: false
     },
     {
         id: 4,
@@ -61,7 +64,8 @@ export const products = [
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hendrerit gravida rutrum quisque non tellus orci ac auctor. Purus faucibus ornare suspendisse sed nisi lacus. Imperdiet massa tincidunt nunc pulvinar sapien et ligula. Massa id neque aliquam vestibulum morbi blandit. Sit amet nisl purus in mollis. Mi proin sed libero enim sed faucibus turpis in. Mi bibendum neque egestas congue quisque egestas diam in arcu. Tortor aliquam nulla facilisi cras.',
         alcohol: '11',
         volume: '220',
-        count: ''
+        count: '',
+        groupProduct: false
     },
     {
         id: 5,
@@ -73,7 +77,8 @@ export const products = [
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hendrerit gravida rutrum quisque non tellus orci ac auctor. Purus faucibus ornare suspendisse sed nisi lacus. Imperdiet massa tincidunt nunc pulvinar sapien et ligula. Massa id neque aliquam vestibulum morbi blandit. Sit amet nisl purus in mollis. Mi proin sed libero enim sed faucibus turpis in. Mi bibendum neque egestas congue quisque egestas diam in arcu. Tortor aliquam nulla facilisi cras.',
         alcohol: '11',
         volume: '400',
-        count: ''
+        count: '',
+        groupProduct: false
     },
     {
         id: 6,
@@ -85,7 +90,8 @@ export const products = [
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hendrerit gravida rutrum quisque non tellus orci ac auctor. Purus faucibus ornare suspendisse sed nisi lacus. Imperdiet massa tincidunt nunc pulvinar sapien et ligula. Massa id neque aliquam vestibulum morbi blandit. Sit amet nisl purus in mollis. Mi proin sed libero enim sed faucibus turpis in. Mi bibendum neque egestas congue quisque egestas diam in arcu. Tortor aliquam nulla facilisi cras.',
         alcohol: '6',
         volume: '220',
-        count: ''
+        count: '',
+        groupProduct: false
     },
     {
         id: 7,
@@ -97,7 +103,8 @@ export const products = [
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hendrerit gravida rutrum quisque non tellus orci ac auctor. Purus faucibus ornare suspendisse sed nisi lacus. Imperdiet massa tincidunt nunc pulvinar sapien et ligula. Massa id neque aliquam vestibulum morbi blandit. Sit amet nisl purus in mollis. Mi proin sed libero enim sed faucibus turpis in. Mi bibendum neque egestas congue quisque egestas diam in arcu. Tortor aliquam nulla facilisi cras.',
         alcohol: '0',
         volume: '120',
-        count: ''
+        count: '',
+        groupProduct: false
     },
 
     {
@@ -107,9 +114,10 @@ export const products = [
         bottleImg: '../static/images/bottleImg8.png',
         fruitImg: '../static/images/fruitImg7.png',
         price: '900',
-        description: '',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hendrerit gravida rutrum quisque non tellus orci ac auctor. Purus faucibus ornare suspendisse sed nisi lacus. Imperdiet massa tincidunt nunc pulvinar sapien et ligula. Massa id neque aliquam vestibulum morbi blandit. Sit amet nisl purus in mollis. Mi proin sed libero enim sed faucibus turpis in. Mi bibendum neque egestas congue quisque egestas diam in arcu. Tortor aliquam nulla facilisi cras.',
         alcohol: '0',
         volume: '1500',
-        count: ''
+        count: '',
+        groupProduct: true
     }
 ]

@@ -5,10 +5,18 @@
     width: 100%;
     margin: 44px 0;
     &-title {
-        font-size: $productTitleFont;
-        text-transform: uppercase;
-        color: $productTitleColor;
-        margin-bottom: 24px;
+        display: inline-block;
+        margin-bottom: 23px;
+        border-bottom: 1px solid #EBEBEB;
+        transition: border 0.5s ease-in-out;
+        a {
+            font-size: $productTitleFont;
+            text-transform: uppercase;
+            color: $productTitleColor;
+        }
+        &:hover {
+            border-color: $productTitleColor;
+        }
     }
     &-imgWrapp {
         height: 398px;
